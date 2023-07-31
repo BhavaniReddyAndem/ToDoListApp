@@ -96,11 +96,14 @@ class RealmManager: ObservableObject {
             do {
                 let taskToDelete = localRealm.objects(Task.self).filter(NSPredicate(format: "id == %@", id))
                 guard let task = taskToDelete.first else { return }
-
+                
                 try localRealm.write {
                     task.isDeleted = true
                     print("Marked the task with id: \(id) as deleted")
                 }
+                
+                // Remove the task from the tasks array
+                tasks.removeAll { $0.id == id }
             } catch {
                 print("Error deleting task with \(id) from Realm: \(error)")
             }
