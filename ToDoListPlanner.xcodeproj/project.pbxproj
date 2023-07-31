@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3B4D96202A61E112002123CC /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 3B4D961F2A61E112002123CC /* Realm */; };
 		3B4D96222A61E112002123CC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3B4D96212A61E112002123CC /* RealmSwift */; };
+		3B4D96242A6AEA77002123CC /* TaskDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D96232A6AEA77002123CC /* TaskDateView.swift */; };
+		3B4D96282A6C6F1C002123CC /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D96272A6C6F1C002123CC /* Date+Extension.swift */; };
 		3BFFEABA2A5A0208002538FC /* ToDoListPlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEAB92A5A0208002538FC /* ToDoListPlannerApp.swift */; };
 		3BFFEABE2A5A020B002538FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BFFEABD2A5A020B002538FC /* Assets.xcassets */; };
 		3BFFEAC12A5A020B002538FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BFFEAC02A5A020B002538FC /* Preview Assets.xcassets */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B4D96232A6AEA77002123CC /* TaskDateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDateView.swift; sourceTree = "<group>"; };
+		3B4D96272A6C6F1C002123CC /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		3BFFEAB62A5A0208002538FC /* ToDoListPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BFFEAB92A5A0208002538FC /* ToDoListPlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListPlannerApp.swift; sourceTree = "<group>"; };
 		3BFFEABD2A5A020B002538FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B4D96262A6C6F08002123CC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D96272A6C6F1C002123CC /* Date+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		3BFFEAAD2A5A0208002538FC = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +83,7 @@
 				3BFFEAB92A5A0208002538FC /* ToDoListPlannerApp.swift */,
 				3BFFEAC72A5A0223002538FC /* Components */,
 				3BFFEACC2A5A0230002538FC /* Views */,
+				3B4D96262A6C6F08002123CC /* Extensions */,
 				3BFFEABD2A5A020B002538FC /* Assets.xcassets */,
 				3BFFEAD32A5A023D002538FC /* RealmManager.swift */,
 				3BFFEADB2A5A0264002538FC /* Task.swift */,
@@ -91,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				3BFFEAC82A5A0223002538FC /* TaskRow.swift */,
+				3B4D96232A6AEA77002123CC /* TaskDateView.swift */,
 				3BFFEAC92A5A0223002538FC /* AddButton.swift */,
 			);
 			path = Components;
@@ -191,9 +205,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BFFEACA2A5A0223002538FC /* TaskRow.swift in Sources */,
+				3B4D96242A6AEA77002123CC /* TaskDateView.swift in Sources */,
 				3BFFEAD42A5A023D002538FC /* RealmManager.swift in Sources */,
 				3BFFEAD12A5A0230002538FC /* TasksView.swift in Sources */,
 				3BFFEAD22A5A0230002538FC /* ContentView.swift in Sources */,
+				3B4D96282A6C6F1C002123CC /* Date+Extension.swift in Sources */,
 				3BFFEADC2A5A0264002538FC /* Task.swift in Sources */,
 				3BFFEAD02A5A0230002538FC /* AddTaskView.swift in Sources */,
 				3BFFEABA2A5A0208002538FC /* ToDoListPlannerApp.swift in Sources */,
