@@ -11,6 +11,7 @@
 		3B4D96222A61E112002123CC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3B4D96212A61E112002123CC /* RealmSwift */; };
 		3B4D96242A6AEA77002123CC /* TaskDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D96232A6AEA77002123CC /* TaskDateView.swift */; };
 		3B4D96282A6C6F1C002123CC /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D96272A6C6F1C002123CC /* Date+Extension.swift */; };
+		3B4D962A2A784FB5002123CC /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D96292A784FB5002123CC /* NotificationDelegate.swift */; };
 		3BFFEABA2A5A0208002538FC /* ToDoListPlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFEAB92A5A0208002538FC /* ToDoListPlannerApp.swift */; };
 		3BFFEABE2A5A020B002538FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BFFEABD2A5A020B002538FC /* Assets.xcassets */; };
 		3BFFEAC12A5A020B002538FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BFFEAC02A5A020B002538FC /* Preview Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		3B4D96232A6AEA77002123CC /* TaskDateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDateView.swift; sourceTree = "<group>"; };
 		3B4D96272A6C6F1C002123CC /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		3B4D96292A784FB5002123CC /* NotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDelegate.swift; sourceTree = "<group>"; };
 		3BFFEAB62A5A0208002538FC /* ToDoListPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BFFEAB92A5A0208002538FC /* ToDoListPlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListPlannerApp.swift; sourceTree = "<group>"; };
 		3BFFEABD2A5A020B002538FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				3B4D96272A6C6F1C002123CC /* Date+Extension.swift */,
+				3B4D96292A784FB5002123CC /* NotificationDelegate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				3BFFEAD42A5A023D002538FC /* RealmManager.swift in Sources */,
 				3BFFEAD12A5A0230002538FC /* TasksView.swift in Sources */,
 				3BFFEAD22A5A0230002538FC /* ContentView.swift in Sources */,
+				3B4D962A2A784FB5002123CC /* NotificationDelegate.swift in Sources */,
 				3B4D96282A6C6F1C002123CC /* Date+Extension.swift in Sources */,
 				3BFFEADC2A5A0264002538FC /* Task.swift in Sources */,
 				3BFFEAD02A5A0230002538FC /* AddTaskView.swift in Sources */,
@@ -271,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = NO;
