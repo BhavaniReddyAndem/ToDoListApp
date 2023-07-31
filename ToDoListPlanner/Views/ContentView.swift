@@ -25,7 +25,7 @@ struct ContentView: View {
                 .environmentObject(realmManager)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
-        .background(Color(hue: 0.465, saturation: 0.413, brightness: 0.794))
+        .background(Color(.white))
         
     }
 }
