@@ -10,18 +10,27 @@ import SwiftUI
 struct AddTaskView: View {
     @EnvironmentObject var realmManager: RealmManager
     @State private var title: String = ""
+    @State private var selectedDate = Date()
+    
+
+
     @Environment(\.dismiss) var dismiss
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             Text("Create a New Task")
                 .font(.title3).bold()
                 .frame(maxWidth: .infinity, alignment: .leading)
+                .foregroundColor(.black)
             TextField("Enter your task Here", text: $title)
                 .textFieldStyle(.roundedBorder)
+                .foregroundColor(.gray)
+
+            
+            TaskDateView(selectedDate: $selectedDate)
             
             Button {
                 if title != "" {
-                    realmManager.addTask(taskTitle: title)
+                    realmManager.addTask(taskTitle: title, scheduledTime: selectedDate)
                 }
                 dismiss()
             } label: {
@@ -29,14 +38,14 @@ struct AddTaskView: View {
                     .foregroundColor(.white)
                     .padding()
                     .padding(.horizontal)
-                    .background(Color(hue: 0.328, saturation: 0.796, brightness: 0.408))
+                    .background(Color("DarkPurple"))
                     .cornerRadius(30)
             }
             Spacer()
         }
         .padding(.top, 40)
         .padding(.horizontal)
-        .background(Color(hue: 0.465, saturation: 0.413, brightness: 0.794))
+        .background(Color(.white))
         
     }
 }
