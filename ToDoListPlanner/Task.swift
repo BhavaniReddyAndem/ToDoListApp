@@ -13,5 +13,7 @@ class Task: Object, ObjectKeyIdentifiable {
     @Persisted var title = ""
     @Persisted var completed = false
     @Persisted var scheduledTime: Date? // New property for the scheduled time
+    @Persisted var isDeleted = false // New property to track if the task is deleted
+
 
 }
